@@ -10,14 +10,24 @@
         android:id="@+id/userGuess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="136dp"
+        android:autofillHints="@string/hintText"
+        android:digits="@string/letters"
         android:ems="10"
         android:hint="@string/hintText"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:maxLength="4"
-        android:digits="@string/letters"
-        android:autofillHints="@string/hintText" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/buttonText"
+        app:layout_constraintBottom_toBottomOf="@+id/userGuess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userGuess"
+        app:layout_constraintTop_toTopOf="@+id/userGuess"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
