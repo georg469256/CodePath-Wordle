@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Wordle</string>
+    <string name="letters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="hintText">Enter 4 Letter Guess Here</string>
 </resources>
