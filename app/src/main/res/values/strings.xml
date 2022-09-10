@@ -2,4 +2,11 @@
     <string name="app_name">Wordle</string>
     <string name="letters">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
     <string name="hintText">Enter 4 Letter Guess Here</string>
+    <string name="buttonText">GUESS!</string>
+    <string name="guess_1">Guess #1</string>
+    <string name="guess_1_check">Guess #1 Check</string>
+    <string name="guess_2">Guess #2</string>
+    <string name="guess_2_check">Guess #2 Check</string>
+    <string name="guess_3">Guess #3</string>
+    <string name="guess_3_check">Guess #3 Check</string>
 </resources>
