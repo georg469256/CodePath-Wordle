@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -16,6 +17,7 @@
         android:hint="@string/hintText"
         android:inputType="textPersonName"
         android:maxLength="4"
+        android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -31,99 +33,130 @@
         app:layout_constraintTop_toTopOf="@+id/userGuess"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/Guess1Display"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/guess_1"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/Guess1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/Guess1Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/Guess1CheckDisplay"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/Guess1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Guess1CheckDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_1_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Guess1Display" />
+
+        <TextView
+            android:id="@+id/Guess1Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Guess1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/guess_1_check"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess1Display" />
+        app:layout_constraintTop_toBottomOf="@+id/group1">
 
-    <TextView
-        android:id="@+id/Guess1Check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess1" />
+        <TextView
+            android:id="@+id/Guess2Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/Guess2Display"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/Guess2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Guess2CheckDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_2_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Guess2Display" />
+
+        <TextView
+            android:id="@+id/Guess2Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Guess2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/guess_2"
         android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess1CheckDisplay" />
+        app:layout_constraintTop_toBottomOf="@+id/group2">
+
+        <TextView
+            android:id="@+id/Guess3Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Guess3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Guess3CheckDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guess_3_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Guess3Display" />
+
+        <TextView
+            android:id="@+id/Guess3Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Guess3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/Guess2"
+        android:id="@+id/SecretWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="229dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userGuess"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess1Check" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/Guess2CheckDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/guess_2_check"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess2Display" />
-
-    <TextView
-        android:id="@+id/Guess2Check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess2" />
-
-    <TextView
-        android:id="@+id/Guess3Display"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/guess_3"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess2CheckDisplay" />
-
-    <TextView
-        android:id="@+id/Guess3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess2Check" />
-
-    <TextView
-        android:id="@+id/Guess3CheckDisplay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/guess_3_check"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess3Display" />
-
-    <TextView
-        android:id="@+id/Guess3Check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Guess3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
